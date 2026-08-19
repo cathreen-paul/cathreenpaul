@@ -63,7 +63,7 @@ const certifications = [
   {
     title: "Coming Soon",
     issuer: "Details",
-    date: "2026",
+    date: "01-01-2026",
   },
 ]
 
