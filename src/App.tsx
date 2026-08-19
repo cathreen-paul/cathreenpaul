@@ -60,7 +60,11 @@ const leadership = [
 ]
 
 const certifications = [
-  
+  {
+    title: "Coming Soon",
+    issuer: "Details",
+    date: "2026",
+  },
 ]
 
 const skills = [
@@ -317,7 +321,17 @@ export default function App() {
               <span className="text-blue-600">drives impact.</span>
             </h2>
             </section>
-            // insert certifications //
+
+
+          <section>
+            {certifications.map((cert) => (
+            <div key={cert.title}>
+            <h3>{cert.title}</h3>
+            <p>{cert.issuer}</p>
+            <p>{cert.date}</p>
+            </div>
+            ))}
+          </section>
 
           <section id="skills" className="scroll-mt-28 pt-24">
             <div className="rounded-3xl border border-blue-200 bg-gradient-to-br from-white to-blue-50 p-8">
